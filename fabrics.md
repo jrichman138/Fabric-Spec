@@ -1,0 +1,533 @@
+# Fabric Reference Guide
+> Singer Heavy Duty 4452 · Schmetz & Singer Needles · Gütermann Thread
+
+---
+
+## Natural
+
+### Duck Canvas
+
+**Tags:** `workwear` `shell` `pack` `structure` `pocket`
+
+**Needle**
+- Primary: Schmetz Jeans/Denim 90/14 or 100/16 (for heavier weights)
+- Alternative: Singer Heavy Duty 90/14
+
+**Thread**
+- Gütermann Mara 70 or Mara 100 (all-purpose polyester) for seams
+- Gütermann Mara 30 for topstitching
+
+**Machine Settings**
+- Stitch length: 3.0–4.0 mm
+- Stitch width: 0 (straight stitch)
+- Tension: 4–5 (slightly higher than default)
+- Presser foot: Walking foot strongly recommended; standard foot workable on lighter weights
+
+**Quick Tips**
+- Use clips instead of pins to avoid permanent holes
+- Flatten seam allowances with a rubber mallet before sewing
+- Backstitch generously — duck canvas takes stress at seams
+- Pre-wash if you want preshrunk results; skip if you want the stiff hand
+
+**Detail**
+Duck canvas is tightly woven and dense, which means the machine needs to work harder to push the needle through multiple layers. On the 4452, engage the full motor speed for thick seam crossings rather than slowing down — stopping mid-seam in thick layers can cause skipped stitches. Use a thimble or seam roller to help feed layers evenly. For workwear applications, a flat-felled or French seam adds durability. Topstitching with Mara 30 gives a clean, visible finish that holds up to heavy use.
+
+---
+
+### Waxed Canvas
+
+**Tags:** `shell` `pack` `workwear` `structure`
+
+**Needle**
+- Primary: Schmetz Microtex Sharp 80/12 or 90/14
+- Alternative: Schmetz Jeans 90/14 (if Microtex skips on heavier wax coatings)
+
+**Thread**
+- Gütermann Mara 70 (polyester — resists moisture better than cotton thread)
+- Avoid cotton thread — wax accelerates degradation over time
+
+**Machine Settings**
+- Stitch length: 3.0–3.5 mm
+- Stitch width: 0 (straight stitch)
+- Tension: 4 (test on scrap — wax coating affects thread pull)
+- Presser foot: Teflon foot recommended; wax buildup will stick to standard metal foot
+
+**Quick Tips**
+- Use clips only — pins leave permanent holes in waxed canvas
+- Wipe the needle frequently with a cloth; wax buildup causes drag and skipped stitches
+- Seams don't need finishing — waxed canvas resists fraying naturally
+- Re-wax seam lines after sewing to restore water resistance
+
+**Detail**
+The wax coating is the main challenge: it transfers to your presser foot and needle, creating drag that causes uneven stitching. A Teflon or roller foot is the single biggest quality-of-life upgrade for this fabric. Sewing in a warm room softens the wax slightly and helps the fabric feed more smoothly. Avoid ironing — heat melts the wax and creates uneven patches. If you need to crease a fold, use your fingernail or a bone folder. For bags and field gear, bar tacking stress points adds significant longevity.
+
+---
+
+### Cotton Twill
+
+**Tags:** `workwear` `shell` `pocket` `lining`
+
+**Needle**
+- Primary: Schmetz Universal 80/12 or 90/14
+- Alternative: Schmetz Jeans 80/12 for tighter weaves
+
+**Thread**
+- Gütermann Mara 100 for seams
+- Gütermann Mara 70 or Mara 30 for topstitching
+
+**Machine Settings**
+- Stitch length: 2.5–3.0 mm
+- Stitch width: 0 (straight stitch); 5.0 mm zigzag for edge finishing
+- Tension: 4 (standard)
+- Presser foot: Standard foot; walking foot for multiple layers
+
+**Quick Tips**
+- Pre-wash to account for shrinkage before cutting
+- Serge or zigzag raw edges — twill frays readily
+- Diagonal weave means bias edges stretch easily; handle cut pieces carefully
+- Press seams open for flatter, more professional results
+
+**Detail**
+Cotton twill is one of the most forgiving fabrics to sew — consistent feed, predictable tension, and easy to press. The diagonal weave gives it natural drape and some flexibility, which makes it excellent for workwear like pants, aprons, and jackets. The main watch-out is fraying: raw edges need finishing quickly after cutting. For workwear durability, use a shorter stitch length (2.5 mm) and double-stitch stress points. Gütermann Mara 100 in a matching color is a reliable all-purpose choice; step up to Mara 70 if you want a stronger seam on high-stress garments.
+
+---
+
+## Synthetic
+
+### Nylon 7D
+
+**Tags:** `ultralight` `lining` `pack` `shelter` `shell`
+
+**Needle**
+- Primary: Schmetz Microtex Sharp 60/8 or 65/9
+- Alternative: Schmetz Universal 70/10 (if Microtex causes skipped stitches)
+
+**Thread**
+- Gütermann Mara 120 (fine polyester — matches the lightweight fabric)
+- Avoid heavy thread; it will pucker the fabric
+
+**Machine Settings**
+- Stitch length: 1.5–2.0 mm
+- Stitch width: 0 (straight stitch)
+- Tension: 3–3.5 (lighter tension to avoid puckering)
+- Presser foot: Teflon foot; standard foot with tissue paper if Teflon unavailable
+
+**Quick Tips**
+- Use tissue paper above and below fabric when sewing — prevents the feed dogs from chewing the fabric
+- Sew slowly and steadily; don't let the fabric bunch at the start of a seam
+- Hold thread tails when starting to prevent jamming
+- Test tension on scrap every session — humidity affects this fabric's behavior
+
+**Detail**
+7D nylon is extremely lightweight and slippery, which makes it technically demanding. The fabric can be pulled into the feed dogs at the start of a seam, causing jams and tears. Starting with the needle down and holding fabric taut (not stretched) helps. Tissue paper is your friend here — place a strip under the seam line and tear it away after sewing. Seam allowances should be heat-sealed or French-seamed rather than serged, as the fabric is too light for heavy finishing. Ideal for stuff sacks, ultralight wind layers, and pack linings.
+
+---
+
+### Nylon 70D
+
+**Tags:** `shell` `pack` `pocket` `ultralight`
+
+**Needle**
+- Primary: Schmetz Microtex Sharp 70/10 or 75/11
+- Alternative: Schmetz Universal 80/12
+
+**Thread**
+- Gütermann Mara 100 for seams
+- Gütermann Mara 70 for topstitching or stress seams
+
+**Machine Settings**
+- Stitch length: 2.0–2.5 mm
+- Stitch width: 0 (straight stitch)
+- Tension: 3.5–4
+- Presser foot: Teflon foot preferred; standard foot workable
+
+**Quick Tips**
+- Clips preferred over pins — pin holes are visible on coated versions
+- Feed slowly at seam starts to prevent fabric being pulled into the machine
+- Heat-seal cut edges with a lighter on raw cuts to prevent fraying
+- Seam tape on the inside adds weather resistance to finished seams
+
+**Detail**
+70D nylon is a versatile mid-weight synthetic — heavier than 7D but still light enough to behave slippery on the machine. It's a MYOG workhorse for stuff sacks, dry bags, wind shells, and pack fabric. Coated versions (PU or silicone) are more slippery and benefit more from a Teflon foot. Uncoated 70D is more forgiving. Seam finishing with tape or seam sealer is important for any weather-exposed application. It responds well to bar tacks at stress points and holds hardware like cord locks and buckles cleanly.
+
+---
+
+### Nylon Taffeta
+
+**Tags:** `lining` `ultralight` `pack` `shell`
+
+**Needle**
+- Primary: Schmetz Microtex Sharp 65/9 or 70/10
+- Alternative: Schmetz Universal 70/10
+
+**Thread**
+- Gütermann Mara 120 for lightweight taffeta
+- Gütermann Mara 100 for standard weight
+
+**Machine Settings**
+- Stitch length: 1.8–2.2 mm
+- Stitch width: 0 (straight stitch)
+- Tension: 3–3.5
+- Presser foot: Teflon foot strongly recommended
+
+**Quick Tips**
+- Taffeta shifts easily — use plenty of clips and sew slowly
+- Tissue paper under lightweight versions prevents feed dog damage
+- French seams or bound seams give clean lining finishes
+- Avoid over-pressing — synthetic taffeta scorches easily; use a press cloth
+
+**Detail**
+Nylon taffeta is primarily used as lining fabric, for stuff sacks, and ultralight shell layers. It has a distinctive rustle and is very slippery to handle. The main challenge is keeping seam lines straight as the layers shift during sewing. Staying stitch curved edges immediately after cutting. For lining applications, a slightly longer stitch (2.2 mm) gives a smooth finish. For structural applications like stuff sacks, shorten to 1.8–2.0 mm and reinforce stress points. Avoid high iron settings — use a low synthetic setting with a press cloth or just finger-press seams.
+
+---
+
+### Nyco Ripstop
+
+**Tags:** `workwear` `shell` `pocket` `pack`
+
+**Needle**
+- Primary: Schmetz Universal 80/12
+- Alternative: Schmetz Microtex Sharp 80/12 for tighter weaves
+
+**Thread**
+- Gütermann Mara 100 for seams
+- Gütermann Mara 70 for reinforced seams and topstitching
+
+**Machine Settings**
+- Stitch length: 2.5–3.0 mm
+- Stitch width: 0 (straight stitch)
+- Tension: 4
+- Presser foot: Standard foot; Teflon foot if coated
+
+**Quick Tips**
+- Ripstop grid means cuts and tears don't propagate — work with it by cutting on-grid where possible
+- Pre-shrink before cutting if using for fitted garments
+- Nylon content can fray at cut edges — heat-seal or serge promptly
+- Bar tack at all attachment points — the nylon component is strong but the weave opens under point stress
+
+**Detail**
+Nyco (nylon-cotton blend) ripstop combines the durability of nylon with the breathability and comfort of cotton. It's a classic military and workwear fabric used in BDUs, field shirts, and cargo pants. The ripstop grid provides excellent tear resistance, but the weave is more open than plain nylon, so seams need to be well-finished. It presses better than pure nylon due to the cotton content — use medium heat with steam. For workwear applications, flat-felled seams add durability and a clean look on both sides. The 4452 handles this fabric very comfortably at standard settings.
+
+---
+
+### Cordura 500D
+
+**Tags:** `pack` `structure` `workwear` `pocket`
+
+**Needle**
+- Primary: Schmetz Jeans 100/16 or 110/18
+- Alternative: Schmetz Heavy Duty 100/16
+
+**Thread**
+- Gütermann Mara 30 or Mara 50 for seams (high-tenacity polyester)
+- Gütermann Mara 30 for topstitching
+
+**Machine Settings**
+- Stitch length: 3.0–3.5 mm
+- Stitch width: 0 (straight stitch)
+- Tension: 5–6 (higher tension for thick thread in dense fabric)
+- Presser foot: Walking foot strongly recommended
+
+**Quick Tips**
+- Use a rubber mallet to flatten bulky seam intersections before sewing
+- Sew at full speed through thick sections — the motor handles it better than slow crawling
+- Use a seam roller or clapper after each seam to reduce bulk
+- Topstitching is both decorative and structural — don't skip it on bags and pack panels
+
+**Detail**
+Cordura 500D is a high-tenacity nylon fabric used in packs, bags, and heavy-duty workwear. It's dense and abrasion-resistant, which means the needle and thread need to match the fabric's strength. Mara 30 is a strong thread choice — lighter threads will break under the stress Cordura gear typically takes. The walking foot is almost mandatory for multi-layer work, keeping the layers feeding evenly. Needle heat can be an issue in long seams — pause to let the needle cool if you notice skipped stitches developing, or switch to a fresh needle. For pack construction, bar tacking every strap and webbing attachment point is essential.
+
+---
+
+### Polyester Broadcloth
+
+**Tags:** `lining` `pocket` `workwear`
+
+**Needle**
+- Primary: Schmetz Universal 80/12
+- Alternative: Schmetz Microtex Sharp 80/12 for finer weaves
+
+**Thread**
+- Gütermann Mara 100
+- Gütermann All-Purpose polyester thread
+
+**Machine Settings**
+- Stitch length: 2.0–2.5 mm
+- Stitch width: 0 (straight stitch); 4.0–5.0 mm zigzag for edge finishing
+- Tension: 4 (standard)
+- Presser foot: Standard foot
+
+**Quick Tips**
+- Polyester broadcloth is heat-sensitive — use a low iron setting and press cloth
+- Tends to pucker along seams if tension is too high; test on scrap
+- Serge or zigzag edges as it frays steadily
+- Good base fabric for linings in workwear pockets and jacket interiors
+
+**Detail**
+Polyester broadcloth is a smooth, plain-weave fabric that sews easily but requires attention to heat and tension. It's not a primary MYOG structural fabric, but it earns its place as lining material, pocket bags, and any application where a smooth, durable interior finish is needed. The main challenge is puckering — polyester thread in a polyester fabric can behave unpredictably with tension. Always test a seam on scrap and adjust tension down if needed. Pressing with a low-heat setting and a press cloth avoids the shiny melted look that ruins polyester seams.
+
+---
+
+### Mesh (Athletic / Spacer / Structural)
+
+**Tags:** `pack` `shell` `base-layer` `midlayer` `pocket`
+
+**Needle**
+- Primary: Schmetz Universal 75/11 or 80/12
+- Alternative: Schmetz Stretch 75/11 for power mesh or knit mesh
+
+**Thread**
+- Gütermann Mara 100 for structural mesh
+- Gütermann Elasticord or stretch thread for power mesh applications
+
+**Machine Settings**
+- Stitch length: 2.5–3.0 mm (structural); 2.0–2.5 mm (power/stretch mesh)
+- Stitch width: 3.0–4.0 mm zigzag for stretch mesh; 0 for structural
+- Tension: 3.5–4
+- Presser foot: Teflon foot or roller foot
+
+**Quick Tips**
+- Stabilize edges with stay tape before sewing stretch mesh to prevent distortion
+- Use a zigzag stitch for any mesh that needs stretch retention
+- Structural mesh (pack pockets) can be sewn straight stitch with standard settings
+- Avoid stretching mesh while feeding — let the machine do the work
+
+**Detail**
+Mesh covers a range of fabrics with different sewing needs. Power mesh (fine, stretchy, used in next-to-skin layers) behaves like a knit and needs a stretch stitch or narrow zigzag. Athletic mesh (open weave, used in venting panels) is more stable and sews closer to a woven. Structural mesh (used in pack hipbelt windows and back panels) is stiff and dimensionally stable — treat it like a synthetic woven. For MYOG pack projects, structural mesh with a straight stitch and walking foot gives clean, flat seam lines. For apparel mesh panels, a narrow zigzag retains stretch and avoids broken stitches when the fabric is under tension.
+
+---
+
+## Stretch & Fleece
+
+### Polartec Power Stretch
+
+**Tags:** `base-layer` `midlayer` `shell`
+
+**Needle**
+- Primary: Schmetz Stretch 75/11
+- Alternative: Schmetz Ball Point 75/11
+
+**Thread**
+- Gütermann Elastic thread for seams under high stretch
+- Gütermann Mara 100 for less-stressed seams
+
+**Machine Settings**
+- Stitch length: 2.0–2.5 mm
+- Stitch width: 3.0–4.0 mm zigzag or lightning stitch
+- Tension: 3–3.5
+- Presser foot: Walking foot preferred; standard foot workable with careful feeding
+
+**Quick Tips**
+- Never use a straight stitch for seams that will stretch — threads will pop
+- A lightning bolt stitch (if your machine has it) gives the best stretch-recovery
+- Avoid stretching the fabric while sewing — let it feed naturally
+- Seam allowances can be topstitched flat to reduce bulk against skin
+
+**Detail**
+Power Stretch is a four-way stretch performance fabric — smooth on one side, fleece on the other. It's used in base layers, midlayers, and active gear where unrestricted movement is critical. The stretch stitch needle is essential: a universal needle will skip stitches on this fabric consistently. Tension should be lighter than standard to allow the seam to stretch without thread breakage. Flat-locked seams (simulated on a home machine with a wide zigzag and trimmed seam allowance) reduce bulk significantly and are worth the extra steps for next-to-skin garments. Test your stitch on scrap and stretch the seam firmly before trusting it — better to find a broken stitch on scrap than on a finished garment.
+
+---
+
+### Polartec Grid Fleece
+
+**Tags:** `midlayer` `shell` `ultralight`
+
+**Needle**
+- Primary: Schmetz Stretch 75/11 or 80/12
+- Alternative: Schmetz Ball Point 80/12
+
+**Thread**
+- Gütermann Mara 100 polyester
+
+**Machine Settings**
+- Stitch length: 2.5–3.0 mm
+- Stitch width: 3.5–4.0 mm zigzag
+- Tension: 3.5
+- Presser foot: Walking foot; avoid standard foot which can compress the grid texture
+
+**Quick Tips**
+- The grid texture can shift during sewing — use plenty of clips
+- Sew with the grid side down against the feed dogs for better traction
+- Fleece doesn't fray so edges can be left raw — great for fast finishing
+- A walking foot makes an immediate visible difference in stitch consistency
+
+**Detail**
+Grid fleece is a low-pile, open-grid midlayer fabric that's lightweight and fast-drying. It sews more easily than high-pile fleece because the grid structure feeds more consistently. The main challenge is the fabric's loft causing the presser foot to compress and distort the grid pattern, which affects stitch quality. A walking foot distributes the pressure more evenly and gives cleaner results. Seam allowances don't need finishing — just trim them close and they'll stay put. For MYOG midlayer garments, simple construction with zigzag seams is fast, functional, and durable.
+
+---
+
+### Polartec Alpha
+
+**Tags:** `insulation` `midlayer` `ultralight`
+
+**Needle**
+- Primary: Schmetz Stretch 75/11
+- Alternative: Schmetz Universal 80/12
+
+**Thread**
+- Gütermann Mara 100 polyester
+
+**Machine Settings**
+- Stitch length: 2.5–3.0 mm
+- Stitch width: 3.0–4.0 mm zigzag
+- Tension: 3.5
+- Presser foot: Walking foot strongly recommended
+
+**Quick Tips**
+- Alpha is fragile until sewn — handle cut pieces minimally to avoid distorting the batting structure
+- Use a longer stitch length than you'd expect — short stitches perforate the material
+- Baste layers together before final sewing to keep everything aligned
+- Face fabric and lining do most of the structural work — Alpha is the fill layer
+
+**Detail**
+Polartec Alpha is an active insulation fabric — a lofted batting designed for high-output activities. Unlike down, it maintains insulating properties when damp and is highly breathable. For MYOG, it's typically sandwiched between a face fabric and lining, both of which carry the seam stress. The Alpha layer itself is fragile at the edges and can pull apart if handled roughly before it's enclosed in a seam. Keep seam allowances wide (at least 12–15mm) and sew slowly. Channel quilting to attach Alpha to the face fabric helps prevent shifting in the finished garment. This is an intermediate MYOG project but yields excellent results in vests and active jackets.
+
+---
+
+## Technical
+
+### X-Pac VX21
+
+**Tags:** `pack` `shelter` `structure` `shell`
+
+**Needle**
+- Primary: Schmetz Jeans 90/14
+- Alternative: Schmetz Microtex Sharp 90/14
+
+**Thread**
+- Gütermann Mara 70 or Mara 50 (high-tenacity polyester)
+
+**Machine Settings**
+- Stitch length: 3.0–3.5 mm
+- Stitch width: 0 (straight stitch)
+- Tension: 4–4.5
+- Presser foot: Teflon foot essential — standard foot will stick and drag
+
+**Quick Tips**
+- Every needle hole is permanent — plan seam lines carefully before sewing
+- Use clips only; no pins
+- Seam tape on the inside makes seams weather-resistant and hides needle holes
+- The X grid is a visual guide — align seams parallel to the grid for a clean look
+
+**Detail**
+X-Pac is a laminate fabric combining a face fabric (usually nylon or polyester), X-grid scrim for structure, and a waterproof film backer. It's extremely popular for MYOG packs, pouches, and bivy covers. The laminate construction means it behaves differently from woven fabrics — it doesn't fray, holds its shape very well, and is inherently water resistant. However, every needle hole is a permanent penetration of the waterproof layer, so seam sealer or seam tape is important for waterproof applications. The Teflon foot is non-negotiable — the film backer will grip a standard foot and cause uneven feeding and skipped stitches. VX21 is the most common weight for pack panels and pouches.
+
+---
+
+### Silnylon / Silpoly
+
+**Tags:** `shelter` `ultralight` `shell` `pack`
+
+**Needle**
+- Primary: Schmetz Microtex Sharp 70/10
+- Alternative: Schmetz Universal 75/11
+
+**Thread**
+- Gütermann Mara 120 (fine thread to minimize hole size)
+
+**Machine Settings**
+- Stitch length: 1.8–2.2 mm
+- Stitch width: 0 (straight stitch)
+- Tension: 3–3.5
+- Presser foot: Teflon foot essential
+
+**Quick Tips**
+- Silicone coating makes this extremely slippery — tissue paper above and below is highly recommended
+- Every seam needs seam sealer for waterproof performance
+- Work in a warm room — the silicone coating stiffens in cold
+- Bias edges stretch dramatically — stabilize before sewing
+
+**Detail**
+Silnylon and silpoly are silicone-impregnated ultralight fabrics used for tarps, bivy covers, wind shells, and stuff sacks. The silicone coating provides excellent water resistance and low friction — which also makes it extremely challenging to sew. It slides, bunches, and shifts constantly. Tissue paper is the most reliable way to manage this: sandwich the fabric between sheets, sew through all layers, and tear away the paper after. Seam allowances should be kept consistent and narrow (8–10mm) for light applications. All finished seams need seam sealer (silicone-based for silnylon, urethane for silpoly) for waterproof performance. Not a beginner fabric — but very rewarding for ultralight shelter and bivy projects.
+
+---
+
+### Dyneema Composite Fabric (DCF)
+
+**Tags:** `shelter` `ultralight` `pack` `structure`
+
+**Needle**
+- Primary: Schmetz Microtex Sharp 70/10 or 75/11
+- Alternative: Schmetz Universal 75/11
+
+**Thread**
+- Gütermann Mara 120 (minimize hole size)
+- Some DCF projects use bonding tape instead of stitching for waterproof seams
+
+**Machine Settings**
+- Stitch length: 3.0–4.0 mm (longer stitch = fewer holes = stronger fabric retention)
+- Stitch width: 0 (straight stitch)
+- Tension: 3.5
+- Presser foot: Teflon foot essential
+
+**Quick Tips**
+- Use the longest stitch length that still holds the seam — every hole weakens the laminate
+- Never backstitch — instead, tie thread tails by hand or use a seam knot
+- Tape seams with DCF seam tape for waterproof and structural reinforcement
+- Handle with clean hands — oils from skin degrade the adhesive on some versions
+
+**Detail**
+DCF (formerly known as Cuben Fiber) is an ultra-high-strength laminate film used in ultralight tarps, stuff sacks, and bivy covers. It doesn't stretch, doesn't fray, and is extremely strong for its weight — but it's also unforgiving. Needle holes don't close up the way woven fabrics do, so every stitch is a permanent perforation. This means longer stitch lengths are structurally better, not worse. Backstitching concentrates holes in one spot and should be avoided entirely — secure thread ends by tying or with a seam lock knot. Many experienced DCF sewers use bonding tape (Cuben tape or similar) for most seam work, using stitching only where mechanical stress demands it. This is an advanced MYOG material best approached after experience with silnylon or X-Pac.
+
+---
+
+### Softshell (Woven Stretch)
+
+**Tags:** `shell` `midlayer` `workwear`
+
+**Needle**
+- Primary: Schmetz Stretch 75/11 or 80/12
+- Alternative: Schmetz Microtex Sharp 80/12 for non-stretch woven softshell
+
+**Thread**
+- Gütermann Mara 100
+
+**Machine Settings**
+- Stitch length: 2.5–3.0 mm
+- Stitch width: 2.0–3.0 mm zigzag for stretch versions; 0 for non-stretch
+- Tension: 4
+- Presser foot: Walking foot recommended
+
+**Quick Tips**
+- Test stitch type on scrap — stretch vs. non-stretch softshell behave very differently
+- The DWR finish can cause skipped stitches — sew slowly and use a fresh needle
+- Seam tape on exposed seams restores DWR protection lost at the needle holes
+- Press with a low-heat setting and press cloth — the DWR coating can degrade with direct heat
+
+**Detail**
+Softshell is a broad category covering woven or knit fabrics with a durable water repellent (DWR) finish, often bonded to a fleece or tricot backer. The woven-stretch varieties are the most common for MYOG technical pants, jackets, and active layers. The DWR finish is the main sewing challenge — it can cause needle drag and skipped stitches, particularly with a standard foot. A Teflon or walking foot helps significantly. The bonded backer adds bulk; plan seam allowances accordingly and trim carefully. For exposed seams, seam tape restores water resistance and gives a cleaner inside finish. A great fabric for technical pants, active jackets, and midlayer shells.
+
+---
+
+### Robic Nylon
+
+**Tags:** `pack` `structure` `shell` `workwear`
+
+**Needle**
+- Primary: Schmetz Jeans 90/14
+- Alternative: Schmetz Universal 90/14
+
+**Thread**
+- Gütermann Mara 70 or Mara 50
+
+**Machine Settings**
+- Stitch length: 2.5–3.0 mm
+- Stitch width: 0 (straight stitch)
+- Tension: 4–4.5
+- Presser foot: Standard foot; Teflon foot for coated versions
+
+**Quick Tips**
+- Heat-seal raw edges — Robic frays and the high-tenacity weave will unravel quickly if left raw
+- Bar tack all hardware attachment points — webbing and hardware put concentrated stress on the fabric
+- Use high-tenacity thread (Mara 50 or 70) — this fabric is stronger than standard thread and the thread will be the failure point otherwise
+- Clips preferred over pins on coated versions
+
+**Detail**
+Robic is a high-tenacity nylon developed specifically for pack and bag construction. It offers better abrasion resistance than standard nylon at a comparable weight, making it ideal for pack bodies, hipbelts, and shoulder straps. It sews similarly to Cordura but is typically lighter and more pliable. The weave is tight enough that needle selection matters — a jeans needle punches through cleanly without deflecting. For pack construction, Mara 50 is the minimum thread strength recommendation; anything lighter risks thread failure before fabric failure, which is the wrong failure mode in a load-bearing pack. A strong, reliable fabric for anyone moving beyond simple pouch projects.
+
+---
+
+*Last updated: 2026*
+*Machine: Singer Heavy Duty 4452*
+*Needle brands: Schmetz, Singer*
+*Thread brand: Gütermann*

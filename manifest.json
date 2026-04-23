@@ -1,0 +1,16 @@
+{
+  "name": "Fabric Spec",
+  "short_name": "Fabric Spec",
+  "description": "Sewing fabric reference guide — needle, thread, and machine settings.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+// Parses fabrics.md and drives the UI. No framework, no build step.
+
+'use strict';
+
+const MARKDOWN_PATH = 'fabrics.md';
+
+// ── HTML escaping ─────────────────────────────────────────────────────────────
+
+function esc(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+// ── Parser ────────────────────────────────────────────────────────────────────
+
+function parseFabrics(md) {
+  const fabrics = [];
+  let currentGroup = '';
+  let currentFabric = null;
+  let section = null;
+
+  for (const raw of md.split('\n')) {
+    const line = raw.trimEnd();
+
+    if (/^## /.test(line)) {
+      currentGroup = line.slice(3).trim();
+      continue;
+    }
+
+    if (/^### /.test(line)) {
+      if (currentFabric) fabrics.push(currentFabric);
+      currentFabric = {
+        name:     line.slice(4).trim(),
+        group:    currentGroup,
+        tags:     [],
+        needle:   { primary: '', alternative: '' },
+        thread:   [],
+        settings: {},
+        tips:     [],
+        detail:   '',
+      };
+      section = null;
+      continue;
+    }
+
+    if (!currentFabric) continue;
+
+    const tagsMatch = line.match(/^\*\*Tags:\*\*\s*(.+)/);
+    if (tagsMatch) {
+      currentFabric.tags = [...tagsMatch[1].matchAll(/`([^`]+)`/g)].map(m => m[1]);
+      continue;
+    }
+
+    const sectionMatch = line.match(/^\*\*(Needle|Thread|Machine Settings|Quick Tips|Detail)\*\*$/);
+    if (sectionMatch) { section = sectionMatch[1]; continue; }
+
+    if (!section) continue;
+
+    const bullet = line.match(/^- (.+)/);
+
+    if (section === 'Needle' && bullet) {
+      const v = bullet[1];
+      if (/^Primary:/i.test(v))          currentFabric.needle.primary     = v.replace(/^Primary:\s*/i, '');
+      else if (/^Alternative:/i.test(v)) currentFabric.needle.alternative = v.replace(/^Alternative:\s*/i, '');
+    } else if (section === 'Thread' && bullet) {
+      currentFabric.thread.push(bullet[1]);
+    } else if (section === 'Machine Settings' && bullet) {
+      const [key, ...rest] = bullet[1].split(':');
+      if (key && rest.length) currentFabric.settings[key.trim()] = rest.join(':').trim();
+    } else if (section === 'Quick Tips' && bullet) {
+      currentFabric.tips.push(bullet[1]);
+    } else if (section === 'Detail') {
+      const t = line.trim();
+      if (t && t !== '---') currentFabric.detail += (currentFabric.detail ? ' ' : '') + t;
+    }
+  }
+
+  if (currentFabric) fabrics.push(currentFabric);
+  return fabrics;
+}
+
+// ── State ─────────────────────────────────────────────────────────────────────
+
+let allFabrics = [];
+
+// ── DOM refs ──────────────────────────────────────────────────────────────────
+
+const detailViewEl  = document.getElementById('detail-view');
+const detailPanelEl = document.getElementById('detail-panel');
+const toolbarSelect = document.getElementById('toolbar-select');
+const brandBtn      = document.getElementById('toolbar-title');
+const themeToggle   = document.getElementById('theme-toggle');
+const detailEl      = document.getElementById('fabric-detail');
+const placeholderEl = document.getElementById('placeholder');
+
+// ── Dropdown population ───────────────────────────────────────────────────────
+
+function buildOptions(selectEl) {
+  selectEl.innerHTML = '';
+
+  const blank = document.createElement('option');
+  blank.value = '';
+  blank.textContent = 'Pick your fabric';
+  selectEl.appendChild(blank);
+
+  const groups = [...new Set(allFabrics.map(f => f.group))];
+
+  for (const group of groups) {
+    const og = document.createElement('optgroup');
+    og.label = group;
+    allFabrics.forEach((fabric, idx) => {
+      if (fabric.group !== group) return;
+      const opt = document.createElement('option');
+      opt.value = idx;
+      opt.textContent = fabric.name;
+      og.appendChild(opt);
+    });
+    selectEl.appendChild(og);
+  }
+}
+
+// ── Views ─────────────────────────────────────────────────────────────────────
+
+function showPlaceholder() {
+  toolbarSelect.value     = '';
+  detailEl.hidden         = true;
+  placeholderEl.hidden    = false;
+  detailPanelEl.scrollTop = 0;
+  detailViewEl.classList.add('is-empty');
+}
+
+function renderDetail(fabric) {
+  placeholderEl.hidden = true;
+  detailEl.hidden      = false;
+  detailViewEl.classList.remove('is-empty');
+
+  const settingRows = Object.entries(fabric.settings)
+    .map(([k, v]) => `<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`)
+    .join('');
+
+  detailEl.innerHTML = `
+    <div class="fabric-header">
+      <div class="fabric-group">${esc(fabric.group)}</div>
+      <div class="fabric-name">${esc(fabric.name)}</div>
+      <div class="tags">${fabric.tags.map(t => `<span class="tag">${esc(t)}</span>`).join('')}</div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Needle</h2>
+      <div class="kv-list">
+        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">${esc(fabric.needle.primary)}</span></div>
+        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">${esc(fabric.needle.alternative)}</span></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Thread</h2>
+      <ul class="thread-list">${fabric.thread.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Machine Settings</h2>
+      <table class="settings-table"><tbody>${settingRows}</tbody></table>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Quick Tips</h2>
+      <ul class="tips-list">${fabric.tips.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+    </div>
+
+    ${fabric.detail ? `
+    <div class="section">
+      <h2 class="section-title">Detail</h2>
+      <p class="detail-text">${esc(fabric.detail)}</p>
+    </div>` : ''}
+  `;
+
+  detailPanelEl.scrollTop = 0;
+}
+
+function selectFabric(fabric) {
+  renderDetail(fabric);
+}
+
+// ── Theme ─────────────────────────────────────────────────────────────────────
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  const iconText  = theme === 'light' ? 'dark_mode'           : 'light_mode';
+  const ariaLabel = theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode';
+  if (themeToggle) {
+    themeToggle.querySelector('.material-icons').textContent = iconText;
+    themeToggle.setAttribute('aria-label', ariaLabel);
+  }
+}
+
+function toggleTheme() {
+  const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+  applyTheme(next);
+  localStorage.setItem('theme', next);
+}
+
+(function initTheme() {
+  const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const saved = localStorage.getItem('theme') || (systemDark ? 'dark' : 'light');
+  applyTheme(saved);
+  if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+}());
+
+// ── Bootstrap ─────────────────────────────────────────────────────────────────
+
+async function init() {
+  let md;
+  try {
+    const res = await fetch(MARKDOWN_PATH);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    md = await res.text();
+  } catch (err) {
+    console.warn('Could not load fabrics.md:', err.message);
+    placeholderEl.innerHTML = `
+      <div style="text-align:center;max-width:320px;padding:24px">
+        <p style="margin-bottom:8px">Unable to load fabric data.</p>
+        <p style="font-size:12px;color:var(--text-muted)">
+          Serve over HTTP: <code>npx serve . -p 8080</code>
+        </p>
+      </div>`;
+    return;
+  }
+
+  allFabrics = parseFabrics(md);
+
+  buildOptions(toolbarSelect);
+
+  toolbarSelect.addEventListener('change', () => {
+    const idx = parseInt(toolbarSelect.value, 10);
+    if (!isNaN(idx) && allFabrics[idx]) selectFabric(allFabrics[idx]);
+  });
+
+  brandBtn.addEventListener('click', showPlaceholder);
+
+  // Auto-select first fabric on desktop
+  if (window.matchMedia('(min-width: 768px)').matches && allFabrics.length > 0) {
+    selectFabric(allFabrics[0]);
+  }
+}
+
+init();
