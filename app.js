@@ -92,7 +92,6 @@ let allFabrics = [];
 const detailViewEl  = document.getElementById('detail-view');
 const detailPanelEl = document.getElementById('detail-panel');
 const toolbarSelect = document.getElementById('toolbar-select');
-const brandBtn      = document.getElementById('toolbar-title');
 const themeToggle   = document.getElementById('theme-toggle');
 const detailEl      = document.getElementById('fabric-detail');
 const placeholderEl = document.getElementById('placeholder');
@@ -184,6 +183,7 @@ function renderDetail(fabric) {
 
 function selectFabric(fabric) {
   renderDetail(fabric);
+  toolbarSelect.value = '';
 }
 
 // ── Theme ─────────────────────────────────────────────────────────────────────
@@ -239,8 +239,6 @@ async function init() {
     const idx = parseInt(toolbarSelect.value, 10);
     if (!isNaN(idx) && allFabrics[idx]) selectFabric(allFabrics[idx]);
   });
-
-  brandBtn.addEventListener('click', showPlaceholder);
 
   // Auto-select first fabric on desktop
   if (window.matchMedia('(min-width: 768px)').matches && allFabrics.length > 0) {

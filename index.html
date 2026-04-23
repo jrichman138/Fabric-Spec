@@ -48,7 +48,6 @@
       <!-- Left: content column -->
       <div id="detail-main">
         <header id="toolbar">
-          <button id="toolbar-title" aria-label="Back to fabric list">Fabric Spec</button>
           <div id="toolbar-select-wrap">
             <label for="toolbar-select" class="sr-only">Select a fabric</label>
             <select id="toolbar-select" autocomplete="off" aria-label="Select a fabric"></select>
@@ -59,13 +58,18 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder"><p>Specs are based on a Singer 4452.<br>They may not work on other machines.</p></div>
+          <div id="placeholder">
+            <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p>Specs are based on a Singer 4452.<br>They may not work on other machines.</p>
+          </div>
           <div id="fabric-detail" hidden></div>
         </main>
       </div>
 
       <!-- Right: decorative background panel (desktop only) -->
-      <div id="detail-bg" aria-hidden="true"></div>
+      <div id="detail-bg" aria-hidden="true">
+        <div id="detail-bg-logo">Fabric<br>Spec</div>
+      </div>
 
     </div>
 
