@@ -53,6 +53,16 @@
             <select id="toolbar-select" autocomplete="off" aria-label="Select a fabric"></select>
             <span class="material-icons select-chevron" aria-hidden="true">expand_more</span>
           </div>
+          <div id="font-size-wrap">
+            <button id="font-size-btn" aria-label="Adjust text size" aria-expanded="false">
+              <span class="material-icons" aria-hidden="true">format_size</span>
+            </button>
+            <div id="font-size-panel" hidden>
+              <span class="font-label-sm">A</span>
+              <input type="range" id="font-size-slider" min="11" max="19" value="13" step="1" aria-label="Text size">
+              <span class="font-label-lg">A</span>
+            </div>
+          </div>
           <button id="theme-toggle" aria-label="Toggle light/dark mode">
             <span class="material-icons" aria-hidden="true">light_mode</span>
           </button>
@@ -60,7 +70,7 @@
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
           <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
-            <p>Specs are based on a Singer 4452.<br>They may not work on other machines.</p>
+            <p>Specs are based on the Singer 4452.<br>They may not work on other machines.</p>
           </div>
           <div id="fabric-detail" hidden></div>
         </main>

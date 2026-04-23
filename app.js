@@ -95,6 +95,9 @@ const toolbarSelect = document.getElementById('toolbar-select');
 const themeToggle   = document.getElementById('theme-toggle');
 const detailEl      = document.getElementById('fabric-detail');
 const placeholderEl = document.getElementById('placeholder');
+const fontSizeBtn   = document.getElementById('font-size-btn');
+const fontSizePanel = document.getElementById('font-size-panel');
+const fontSizeSlider = document.getElementById('font-size-slider');
 
 // ── Dropdown population ───────────────────────────────────────────────────────
 
@@ -203,6 +206,31 @@ function toggleTheme() {
   applyTheme(next);
   localStorage.setItem('theme', next);
 }
+
+(function initFontSize() {
+  const saved = localStorage.getItem('font-size');
+  if (saved) {
+    fontSizeSlider.value = saved;
+    document.documentElement.style.setProperty('--content-font-size', saved + 'px');
+  }
+
+  fontSizeBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    const opening = fontSizePanel.hidden;
+    fontSizePanel.hidden = !opening;
+    fontSizeBtn.setAttribute('aria-expanded', opening);
+  });
+
+  document.addEventListener('click', () => {
+    fontSizePanel.hidden = true;
+    fontSizeBtn.setAttribute('aria-expanded', 'false');
+  });
+
+  fontSizeSlider.addEventListener('input', () => {
+    document.documentElement.style.setProperty('--content-font-size', fontSizeSlider.value + 'px');
+    localStorage.setItem('font-size', fontSizeSlider.value);
+  });
+}());
 
 (function initTheme() {
   const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
