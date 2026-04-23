@@ -240,10 +240,6 @@ async function init() {
     if (!isNaN(idx) && allFabrics[idx]) selectFabric(allFabrics[idx]);
   });
 
-  // Auto-select first fabric on desktop
-  if (window.matchMedia('(min-width: 768px)').matches && allFabrics.length > 0) {
-    selectFabric(allFabrics[0]);
-  }
 }
 
 init();
