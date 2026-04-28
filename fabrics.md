@@ -17,6 +17,8 @@
 - Gütermann Mara 70 or Mara 100 (all-purpose polyester) for seams
 - Gütermann Mara 30 for topstitching
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 3.0–4.0 mm
 - Stitch width: 0 (straight stitch)
@@ -46,6 +48,8 @@ Duck canvas is tightly woven and dense, which means the machine needs to work ha
 - Gütermann Mara 70 (polyester — resists moisture better than cotton thread)
 - Avoid cotton thread — wax accelerates degradation over time
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 3.0–3.5 mm
 - Stitch width: 0 (straight stitch)
@@ -74,6 +78,8 @@ The wax coating is the main challenge: it transfers to your presser foot and nee
 **Thread**
 - Gütermann Mara 100 for seams
 - Gütermann Mara 70 or Mara 30 for topstitching
+
+**Machine:** Singer Heavy Duty 4452
 
 **Machine Settings**
 - Stitch length: 2.5–3.0 mm
@@ -106,6 +112,8 @@ Cotton twill is one of the most forgiving fabrics to sew — consistent feed, pr
 - Gütermann Mara 120 (fine polyester — matches the lightweight fabric)
 - Avoid heavy thread; it will pucker the fabric
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 1.5–2.0 mm
 - Stitch width: 0 (straight stitch)
@@ -134,6 +142,8 @@ Cotton twill is one of the most forgiving fabrics to sew — consistent feed, pr
 **Thread**
 - Gütermann Mara 100 for seams
 - Gütermann Mara 70 for topstitching or stress seams
+
+**Machine:** Singer Heavy Duty 4452
 
 **Machine Settings**
 - Stitch length: 2.0–2.5 mm
@@ -164,6 +174,8 @@ Cotton twill is one of the most forgiving fabrics to sew — consistent feed, pr
 - Gütermann Mara 120 for lightweight taffeta
 - Gütermann Mara 100 for standard weight
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 1.8–2.2 mm
 - Stitch width: 0 (straight stitch)
@@ -192,6 +204,8 @@ Nylon taffeta is primarily used as lining fabric, for stuff sacks, and ultraligh
 **Thread**
 - Gütermann Mara 100 for seams
 - Gütermann Mara 70 for reinforced seams and topstitching
+
+**Machine:** Singer Heavy Duty 4452
 
 **Machine Settings**
 - Stitch length: 2.5–3.0 mm
@@ -222,6 +236,8 @@ Nyco (nylon-cotton blend) ripstop combines the durability of nylon with the brea
 - Gütermann Mara 30 or Mara 50 for seams (high-tenacity polyester)
 - Gütermann Mara 30 for topstitching
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 3.0–3.5 mm
 - Stitch width: 0 (straight stitch)
@@ -251,6 +267,8 @@ Cordura 500D is a high-tenacity nylon fabric used in packs, bags, and heavy-duty
 - Gütermann Mara 100
 - Gütermann All-Purpose polyester thread
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 2.0–2.5 mm
 - Stitch width: 0 (straight stitch); 4.0–5.0 mm zigzag for edge finishing
@@ -279,6 +297,8 @@ Polyester broadcloth is a smooth, plain-weave fabric that sews easily but requir
 **Thread**
 - Gütermann Mara 100 for structural mesh
 - Gütermann Elasticord or stretch thread for power mesh applications
+
+**Machine:** Singer Heavy Duty 4452
 
 **Machine Settings**
 - Stitch length: 2.5–3.0 mm (structural); 2.0–2.5 mm (power/stretch mesh)
@@ -311,6 +331,8 @@ Mesh covers a range of fabrics with different sewing needs. Power mesh (fine, st
 - Gütermann Elastic thread for seams under high stretch
 - Gütermann Mara 100 for less-stressed seams
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 2.0–2.5 mm
 - Stitch width: 3.0–4.0 mm zigzag or lightning stitch
@@ -339,6 +361,8 @@ Power Stretch is a four-way stretch performance fabric — smooth on one side, f
 **Thread**
 - Gütermann Mara 100 polyester
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 2.5–3.0 mm
 - Stitch width: 3.5–4.0 mm zigzag
@@ -366,6 +390,8 @@ Grid fleece is a low-pile, open-grid midlayer fabric that's lightweight and fast
 
 **Thread**
 - Gütermann Mara 100 polyester
+
+**Machine:** Singer Heavy Duty 4452
 
 **Machine Settings**
 - Stitch length: 2.5–3.0 mm
@@ -397,6 +423,8 @@ Polartec Alpha is an active insulation fabric — a lofted batting designed for 
 **Thread**
 - Gütermann Mara 70 or Mara 50 (high-tenacity polyester)
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 3.0–3.5 mm
 - Stitch width: 0 (straight stitch)
@@ -424,6 +452,8 @@ X-Pac is a laminate fabric combining a face fabric (usually nylon or polyester),
 
 **Thread**
 - Gütermann Mara 120 (fine thread to minimize hole size)
+
+**Machine:** Singer Heavy Duty 4452
 
 **Machine Settings**
 - Stitch length: 1.8–2.2 mm
@@ -454,6 +484,8 @@ Silnylon and silpoly are silicone-impregnated ultralight fabrics used for tarps,
 - Gütermann Mara 120 (minimize hole size)
 - Some DCF projects use bonding tape instead of stitching for waterproof seams
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 3.0–4.0 mm (longer stitch = fewer holes = stronger fabric retention)
 - Stitch width: 0 (straight stitch)
@@ -482,6 +514,8 @@ DCF (formerly known as Cuben Fiber) is an ultra-high-strength laminate film used
 **Thread**
 - Gütermann Mara 100
 
+**Machine:** Singer Heavy Duty 4452
+
 **Machine Settings**
 - Stitch length: 2.5–3.0 mm
 - Stitch width: 2.0–3.0 mm zigzag for stretch versions; 0 for non-stretch
@@ -509,6 +543,8 @@ Softshell is a broad category covering woven or knit fabrics with a durable wate
 
 **Thread**
 - Gütermann Mara 70 or Mara 50
+
+**Machine:** Singer Heavy Duty 4452
 
 **Machine Settings**
 - Stitch length: 2.5–3.0 mm

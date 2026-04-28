@@ -37,6 +37,7 @@ function parseFabrics(md) {
         name:     line.slice(4).trim(),
         group:    currentGroup,
         tags:     [],
+        machine:  '',
         needle:   { primary: '', alternative: '' },
         thread:   [],
         settings: {},
@@ -54,6 +55,9 @@ function parseFabrics(md) {
       currentFabric.tags = [...tagsMatch[1].matchAll(/`([^`]+)`/g)].map(m => m[1]);
       continue;
     }
+
+    const machineMatch = line.match(/^\*\*Machine:\*\*\s*(.+)/);
+    if (machineMatch) { currentFabric.machine = machineMatch[1].trim(); continue; }
 
     const sectionMatch = line.match(/^\*\*(Needle|Thread|Machine Settings|Quick Tips|Detail)\*\*$/);
     if (sectionMatch) { section = sectionMatch[1]; continue; }
@@ -95,6 +99,9 @@ const toolbarSelect = document.getElementById('toolbar-select');
 const themeToggle   = document.getElementById('theme-toggle');
 const detailEl      = document.getElementById('fabric-detail');
 const placeholderEl = document.getElementById('placeholder');
+const footerEl      = document.getElementById('detail-footer');
+const footerCredit  = document.getElementById('footer-credit');
+const contactLink   = document.getElementById('contact-link');
 const fontSizeBtn   = document.getElementById('font-size-btn');
 const fontSizePanel = document.getElementById('font-size-panel');
 const fontSizeSlider = document.getElementById('font-size-slider');
@@ -130,6 +137,7 @@ function buildOptions(selectEl) {
 function showPlaceholder() {
   toolbarSelect.value     = '';
   detailEl.hidden         = true;
+  footerEl.hidden         = true;
   placeholderEl.hidden    = false;
   detailPanelEl.scrollTop = 0;
   detailViewEl.classList.add('is-empty');
@@ -138,6 +146,7 @@ function showPlaceholder() {
 function renderDetail(fabric) {
   placeholderEl.hidden = true;
   detailEl.hidden      = false;
+  footerEl.hidden      = false;
   detailViewEl.classList.remove('is-empty');
 
   const settingRows = Object.entries(fabric.settings)
@@ -165,7 +174,10 @@ function renderDetail(fabric) {
     </div>
 
     <div class="section">
-      <h2 class="section-title">Machine Settings</h2>
+      <div class="section-title-row">
+        <h2 class="section-title">Machine Settings</h2>
+        ${fabric.machine ? `<span class="section-machine">${esc(fabric.machine)}</span>` : ''}
+      </div>
       <table class="settings-table"><tbody>${settingRows}</tbody></table>
     </div>
 
@@ -206,6 +218,10 @@ function toggleTheme() {
   applyTheme(next);
   localStorage.setItem('theme', next);
 }
+
+// ── Footer setup ──────────────────────────────────────────────────────────────
+footerCredit.textContent = `© ${new Date().getFullYear()} James Richman`;
+contactLink.href = `mailto:${'jrichman138'}@${'gmail.com'}`;
 
 (function initFontSize() {
   const saved = localStorage.getItem('font-size');
