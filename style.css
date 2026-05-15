@@ -1,7 +1,30 @@
+/* ── Fonts ─────────────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+  src: url('fonts/playfair-display.woff2') format('woff2');
+}
+
 /* ── Reset ─────────────────────────────────────────────────────────────────── */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 [hidden] { display: none !important; }
+
+/* ── Icons ─────────────────────────────────────────────────────────────────── */
+
+.icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+[data-theme="light"] .icon-sun  { display: none; }
+[data-theme="dark"]  .icon-moon { display: none; }
 
 /* ── Design tokens ─────────────────────────────────────────────────────────── */
 
@@ -116,8 +139,6 @@ body {
   transform: translateY(-50%);
   color: var(--accent);
   pointer-events: none;
-  font-size: 22px;
-  line-height: 1;
 }
 
 /* Theme toggle */
@@ -140,8 +161,7 @@ body {
   transition: color 0.2s, background 0.2s;
 }
 
-#font-size-btn:hover         { color: var(--accent); background: var(--surface-2); }
-#font-size-btn .material-icons { font-size: 22px; }
+#font-size-btn:hover { color: var(--accent); background: var(--surface-2); }
 
 #font-size-panel {
   position: absolute;
@@ -183,7 +203,6 @@ body {
 
 #theme-toggle:hover                      { color: var(--accent); background: var(--surface-2); }
 [data-theme="dark"] #theme-toggle:hover  { color: #ffd600;       background: var(--surface-2); }
-#theme-toggle .material-icons            { font-size: 22px; }
 
 /* ── Detail panel ──────────────────────────────────────────────────────────── */
 

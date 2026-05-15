@@ -205,10 +205,8 @@ function selectFabric(fabric) {
 
 function applyTheme(theme) {
   document.documentElement.dataset.theme = theme;
-  const iconText  = theme === 'light' ? 'dark_mode'           : 'light_mode';
-  const ariaLabel = theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode';
   if (themeToggle) {
-    themeToggle.querySelector('.material-icons').textContent = iconText;
+    const ariaLabel = theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode';
     themeToggle.setAttribute('aria-label', ariaLabel);
   }
 }
@@ -259,20 +257,22 @@ contactLink.href = `mailto:${'jrichman138'}@${'gmail.com'}`;
 
 async function init() {
   let md;
-  try {
-    const res = await fetch(MARKDOWN_PATH);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    md = await res.text();
-  } catch (err) {
-    console.warn('Could not load fabrics.md:', err.message);
-    placeholderEl.innerHTML = `
-      <div style="text-align:center;max-width:320px;padding:24px">
-        <p style="margin-bottom:8px">Unable to load fabric data.</p>
-        <p style="font-size:12px;color:var(--text-muted)">
-          Serve over HTTP: <code>npx serve . -p 8080</code>
-        </p>
-      </div>`;
-    return;
+  const inline = document.getElementById('fabrics-data');
+  if (inline && inline.textContent.trim()) {
+    md = inline.textContent;
+  } else {
+    try {
+      const res = await fetch(MARKDOWN_PATH);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      md = await res.text();
+    } catch (err) {
+      console.warn('Could not load fabrics.md:', err.message);
+      placeholderEl.innerHTML = `
+        <div style="text-align:center;max-width:320px;padding:24px">
+          <p style="margin-bottom:8px">Unable to load fabric data.</p>
+        </div>`;
+      return;
+    }
   }
 
   allFabrics = parseFabrics(md);
@@ -287,3 +287,9 @@ async function init() {
 }
 
 init();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
