@@ -15,6 +15,17 @@ function esc(str) {
     .replace(/'/g, '&#39;');
 }
 
+// ── Slug helpers ──────────────────────────────────────────────────────────────
+// Must match the Python implementation in sync-fabrics.sh.
+
+function slugify(name) {
+  return String(name).toLowerCase()
+    .replace(/[\s/]+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 // ── Parser ────────────────────────────────────────────────────────────────────
 
 function parseFabrics(md) {
@@ -141,6 +152,7 @@ function showPlaceholder() {
   placeholderEl.hidden    = false;
   detailPanelEl.scrollTop = 0;
   detailViewEl.classList.add('is-empty');
+  document.title = 'Fabric Spec';
 }
 
 function renderDetail(fabric) {
@@ -194,10 +206,42 @@ function renderDetail(fabric) {
   `;
 
   detailPanelEl.scrollTop = 0;
+  document.title = `${fabric.name} · Fabric Spec`;
+}
+
+// ── Routing ───────────────────────────────────────────────────────────────────
+// Root URL `/` uses hash routing (e.g. `/#cordura-500d`).
+// Per-fabric pages live at `/fabric/<slug>/` and pre-select via <meta name="initial-fabric">.
+// On a per-fabric page, picking a different fabric does a full navigation.
+
+function onFabricPage() {
+  return location.pathname.startsWith('/fabric/');
+}
+
+function findFabricBySlug(slug) {
+  return allFabrics.find(f => slugify(f.name) === slug);
+}
+
+function navigateToFabric(fabric) {
+  const slug = slugify(fabric.name);
+  if (onFabricPage()) {
+    location.href = `/fabric/${slug}/`;
+    return;
+  }
+  if (location.hash !== `#${slug}`) location.hash = slug;
+  else renderDetail(fabric);
+}
+
+function applyRoute() {
+  const slug = location.hash.slice(1);
+  if (!slug) { showPlaceholder(); return; }
+  const fabric = findFabricBySlug(slug);
+  if (fabric) renderDetail(fabric);
+  else showPlaceholder();
 }
 
 function selectFabric(fabric) {
-  renderDetail(fabric);
+  navigateToFabric(fabric);
   toolbarSelect.value = '';
 }
 
@@ -284,12 +328,23 @@ async function init() {
     if (!isNaN(idx) && allFabrics[idx]) selectFabric(allFabrics[idx]);
   });
 
+  const initialMeta = document.querySelector('meta[name="initial-fabric"]');
+  const initialSlug = (initialMeta && initialMeta.content) || location.hash.slice(1);
+  if (initialSlug) {
+    const fabric = findFabricBySlug(initialSlug);
+    if (fabric) renderDetail(fabric);
+  }
+
+  window.addEventListener('hashchange', () => {
+    if (onFabricPage()) return;
+    applyRoute();
+  });
 }
 
 init();
 
-if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator && !location.pathname.startsWith('/fabric/')) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js').catch(() => {});
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
   });
 }
