@@ -116,6 +116,11 @@ const contactLink   = document.getElementById('contact-link');
 const fontSizeBtn   = document.getElementById('font-size-btn');
 const fontSizePanel = document.getElementById('font-size-panel');
 const fontSizeSlider = document.getElementById('font-size-slider');
+const printBtn       = document.getElementById('print-btn');
+
+if (printBtn) {
+  printBtn.addEventListener('click', () => window.print());
+}
 
 // ── Dropdown population ───────────────────────────────────────────────────────
 

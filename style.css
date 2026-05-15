@@ -188,6 +188,7 @@ body {
   accent-color: var(--accent);
 }
 
+#print-btn,
 #theme-toggle {
   background: none;
   border: none;
@@ -201,8 +202,12 @@ body {
   flex-shrink: 0;
 }
 
+#print-btn:hover                         { color: var(--accent); background: var(--surface-2); }
 #theme-toggle:hover                      { color: var(--accent); background: var(--surface-2); }
 [data-theme="dark"] #theme-toggle:hover  { color: #ffd600;       background: var(--surface-2); }
+
+/* Only show the print button when a fabric is on screen. */
+.is-empty #print-btn { display: none; }
 
 /* ── Detail panel ──────────────────────────────────────────────────────────── */
 
@@ -501,4 +506,96 @@ body {
   .fabric-name    { font-size: 36px; }
   .settings-table { max-width: 420px; }
   .detail-text    { max-width: 560px; }
+}
+
+/* ── Print ─────────────────────────────────────────────────────────────────── */
+/* A clean one- or two-page handout for the sewing machine. */
+
+@media print {
+  @page { margin: 0.5in; }
+
+  :root,
+  [data-theme="light"],
+  [data-theme="dark"] {
+    color-scheme: light;
+    --bg:         #fff;
+    --surface:    #fff;
+    --surface-2: #fff;
+    --border:     #bbb;
+    --text:       #000;
+    --text-muted: #333;
+    --accent:     #000;
+    --tag-bg:     #fff;
+  }
+
+  html, body {
+    height: auto;
+    overflow: visible;
+    background: #fff;
+    color: #000;
+  }
+
+  #toolbar,
+  #detail-bg,
+  #placeholder,
+  #detail-footer { display: none !important; }
+
+  #app,
+  #detail-view,
+  #detail-main,
+  #detail-panel,
+  #fabric-detail {
+    display: block;
+    flex: none;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    border: none;
+    max-width: 100%;
+  }
+
+  .fabric-header {
+    border-bottom: 1px solid #000;
+    padding-bottom: 8pt;
+    margin-bottom: 14pt;
+  }
+
+  .fabric-group { color: #000;     font-size: 8pt;  letter-spacing: 0.1em; }
+  .fabric-name  { font-size: 26pt; margin-bottom: 6pt; line-height: 1.1; }
+
+  .tags { gap: 4pt; }
+  .tag {
+    background: transparent;
+    border: 1px solid #999;
+    color: #333;
+    font-size: 8pt;
+    padding: 1pt 5pt;
+  }
+
+  .section            { margin-bottom: 10pt; page-break-inside: avoid; }
+  .section-title      { color: #000; font-size: 8pt; margin-bottom: 4pt; }
+  .section-machine    { color: #333; font-size: 8pt; }
+  .section-machine::before { content: ":"; margin-right: 8pt; }
+
+  .kv-row,
+  .thread-list li,
+  .tips-list li,
+  .settings-table td,
+  .detail-text       { font-size: 10pt; line-height: 1.4; }
+
+  .kv-key { color: #333; }
+
+  .settings-table { border-collapse: collapse; width: 100%; max-width: 100%; }
+  .settings-table td { padding: 3pt 6pt; border-bottom: 1px solid #ddd; }
+  .settings-table td:first-child { color: #333; }
+
+  .tips-list li::before,
+  .thread-list li::before { color: #000; }
+
+  .detail-text { color: #222; max-width: 100%; }
+
+  /* The Detail prose is nice-to-have on paper; let it flow but keep settings on page one. */
+  a[href]::after { content: ""; }
 }
