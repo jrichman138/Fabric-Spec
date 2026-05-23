@@ -311,7 +311,7 @@ body {
 }
 
 .fabric-group {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -356,7 +356,7 @@ body {
 .section-title-row .section-title { margin-bottom: 0; }
 
 .section-machine {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -369,7 +369,7 @@ body {
 }
 
 .section-title {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -437,7 +437,7 @@ body {
 }
 
 /* Detail paragraph */
-.detail-text { font-size: var(--content-font-size, 13px); color: var(--text-muted); line-height: 1.75; }
+.detail-text { font-size: var(--content-font-size, 13px); color: var(--text); line-height: 1.75; }
 
 /* Scrollbar */
 ::-webkit-scrollbar       { width: 4px; }

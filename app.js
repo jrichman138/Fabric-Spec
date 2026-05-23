@@ -267,7 +267,7 @@ function toggleTheme() {
 }
 
 // ── Footer setup ──────────────────────────────────────────────────────────────
-footerCredit.textContent = `© ${new Date().getFullYear()} James Richman`;
+footerCredit.textContent = `© ${new Date().getFullYear()}`;
 contactLink.href = `mailto:${'jrichman138'}@${'gmail.com'}`;
 
 (function initFontSize() {
