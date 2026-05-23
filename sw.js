@@ -1,6 +1,6 @@
 // Cache-first service worker. Bump CACHE_VERSION when shipping changes.
 
-const CACHE_VERSION = 'fabric-spec-v6';
+const CACHE_VERSION = 'fabric-spec-v7';
 const PRECACHE = [
   './',
   'index.html',
