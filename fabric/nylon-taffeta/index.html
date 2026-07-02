@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Synthetic</div>
-      <div class="fabric-name">Nylon Taffeta</div>
-      <div class="tags"><span class="tag">lining</span><span class="tag">ultralight</span><span class="tag">pack</span><span class="tag">shell</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Microtex Sharp 65/9 or 70/10</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Schmetz Universal 70/10</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 120 for lightweight taffeta</li><li>Gütermann Mara 100 for standard weight</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>1.8–2.2 mm</td></tr><tr><td>Stitch width</td><td>0 (straight stitch)</td></tr><tr><td>Tension</td><td>3–3.5</td></tr><tr><td>Presser foot</td><td>Teflon foot strongly recommended</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Taffeta shifts easily. Use plenty of clips and sew slowly</li><li>Tissue paper under lightweight versions prevents feed dog damage</li><li>French seams or bound seams give clean lining finishes</li><li>Avoid over-pressing. Synthetic taffeta scorches easily; use a press cloth</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">Nylon taffeta is lining fabric, stuff sack material, and ultralight shell. It rustles audibly and slips constantly. Keeping seam lines straight as layers shift is the central challenge. Stay stitch curved edges immediately after cutting. Use 2.2 mm stitches for linings, 1.8–2.0 mm with reinforced stress points for structural work like stuff sacks. Skip high heat. Low synthetic setting with a press cloth, or finger-press.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>

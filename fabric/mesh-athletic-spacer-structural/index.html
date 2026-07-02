@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Synthetic</div>
-      <div class="fabric-name">Mesh (Athletic / Spacer / Structural)</div>
-      <div class="tags"><span class="tag">pack</span><span class="tag">shell</span><span class="tag">base-layer</span><span class="tag">midlayer</span><span class="tag">pocket</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Universal 75/11 or 80/12</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Schmetz Stretch 75/11 for power mesh or knit mesh</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 100 for structural mesh</li><li>Gütermann Elasticord or stretch thread for power mesh applications</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>2.5–3.0 mm (structural); 2.0–2.5 mm (power/stretch mesh)</td></tr><tr><td>Stitch width</td><td>3.0–4.0 mm zigzag for stretch mesh; 0 for structural</td></tr><tr><td>Tension</td><td>3.5–4</td></tr><tr><td>Presser foot</td><td>Teflon foot or roller foot</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Stabilize edges with stay tape before sewing stretch mesh to prevent distortion</li><li>Use a zigzag stitch for any mesh that needs stretch retention</li><li>Structural mesh (pack pockets) can be sewn straight stitch with standard settings</li><li>Avoid stretching mesh while feeding. Let the machine do the work</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">Mesh covers several distinct fabrics. Power mesh (fine, stretchy) behaves like a knit and needs a stretch stitch or narrow zigzag. Athletic mesh (open weave for venting) is more stable and sews like a woven. Structural mesh (pack hipbelt windows, back panels) is stiff and dimensionally stable; treat it like a synthetic woven. For MYOG packs, structural mesh with a straight stitch and walking foot gives clean seam lines. For apparel panels, a narrow zigzag retains stretch and survives the loading.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>

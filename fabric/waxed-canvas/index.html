@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Natural</div>
-      <div class="fabric-name">Waxed Canvas</div>
-      <div class="tags"><span class="tag">shell</span><span class="tag">pack</span><span class="tag">workwear</span><span class="tag">structure</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Microtex Sharp 80/12 or 90/14</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Schmetz Jeans 90/14 (if Microtex skips on heavier wax coatings)</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 70 (polyester — resists moisture better than cotton thread)</li><li>Avoid cotton thread — wax accelerates degradation over time</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>3.0–3.5 mm</td></tr><tr><td>Stitch width</td><td>0 (straight stitch)</td></tr><tr><td>Tension</td><td>4 (test on scrap — wax coating affects thread pull)</td></tr><tr><td>Presser foot</td><td>Teflon foot recommended; wax buildup will stick to standard metal foot</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Use clips only. Pins leave permanent holes in waxed canvas</li><li>Wipe the needle frequently with a cloth; wax buildup causes drag and skipped stitches</li><li>Seams don&#x27;t need finishing. Waxed canvas resists fraying naturally</li><li>Re-wax seam lines after sewing to restore water resistance</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">Wax transfers to the presser foot and needle, creating drag and uneven stitching. A Teflon or roller foot is the biggest quality-of-life upgrade for this fabric. Sewing in a warm room softens the wax and improves feed. Skip the iron. Heat melts wax into uneven patches. Crease folds with a fingernail or bone folder. Bar tack stress points on bags and field gear.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>

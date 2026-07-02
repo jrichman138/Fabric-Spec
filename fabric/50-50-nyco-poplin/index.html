@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Synthetic</div>
-      <div class="fabric-name">50/50 NyCo Poplin</div>
-      <div class="tags"><span class="tag">workwear</span><span class="tag">shirt</span><span class="tag">pants</span><span class="tag">pocket</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Universal 80/12</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Schmetz Microtex Sharp 80/12</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 100 for seams</li><li>Gütermann Mara 70 for reinforced seams and topstitching</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>2.5–3.0 mm</td></tr><tr><td>Stitch width</td><td>0 (straight stitch)</td></tr><tr><td>Tension</td><td>4</td></tr><tr><td>Presser foot</td><td>Standard foot</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Frays readily. Finish raw edges promptly with serge, zigzag, or a felled seam</li><li>Use mil-spec construction (flat-felled seams) for authentic BDU and field shirt builds</li><li>Bar tack at pocket corners, belt loop attachments, and fly stops. These are the documented failure points on real surplus garments</li><li>Press with medium heat and steam; the cotton component handles the iron well, the nylon component sets seams crisply</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">50/50 NyCo poplin is the authentic summer-weight uniform fabric: original BDUs, M65 field shirts, summer cargo pants, Vietnam-era jungle utilities. Compared to Nyco ripstop, this poplin is plain weave (no grid), tighter and smoother, with more drape and better next-to-skin feel. The nylon adds tear strength and abrasion resistance; the cotton keeps it breathable and presentable. It sews like high-quality cotton/poly shirting: straightforward needles and thread, predictable feed, no special tricks. The defining construction move is flat-felled seams on inseams and side seams. That&#x27;s the mil-spec signature and adds real durability. For accurate field shirts and BDUs, build out the full bar tack set. The fabric rewards the effort.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>

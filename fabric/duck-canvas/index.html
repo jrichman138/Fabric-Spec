@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Natural</div>
-      <div class="fabric-name">Duck Canvas</div>
-      <div class="tags"><span class="tag">workwear</span><span class="tag">shell</span><span class="tag">pack</span><span class="tag">structure</span><span class="tag">pocket</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Jeans/Denim 90/14 or 100/16 (for heavier weights)</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Singer Heavy Duty 90/14</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 70 or Mara 100 (all-purpose polyester) for seams</li><li>Gütermann Mara 30 for topstitching</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>3.0–4.0 mm</td></tr><tr><td>Stitch width</td><td>0 (straight stitch)</td></tr><tr><td>Tension</td><td>4–5 (slightly higher than default)</td></tr><tr><td>Presser foot</td><td>Walking foot strongly recommended; standard foot workable on lighter weights</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Use clips instead of pins to avoid permanent holes</li><li>Flatten seam allowances with a rubber mallet before sewing</li><li>Backstitch generously. Duck canvas takes stress at seams</li><li>Pre-wash if you want preshrunk results; skip if you want the stiff hand</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">Duck canvas is tightly woven and dense. Run the 4452 at full motor speed through thick seam crossings. Slowing down invites skipped stitches. A seam roller helps feed even layers. Flat-felled or French seams add workwear durability. Mara 30 topstitching holds up to heavy use.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>

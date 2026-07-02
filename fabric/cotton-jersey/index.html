@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Knits</div>
-      <div class="fabric-name">Cotton Jersey</div>
-      <div class="tags"><span class="tag">tshirt</span><span class="tag">base-layer</span><span class="tag">midlayer</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Jersey/Ball Point 80/12</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Schmetz Stretch 75/11</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 100 polyester (slight stretch matches the fabric)</li><li>Gütermann Mara 120 for fine lightweight jersey</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>2.5–3.0 mm</td></tr><tr><td>Stitch width</td><td>2.0–3.0 mm narrow zigzag, or lightning stitch if available</td></tr><tr><td>Tension</td><td>3–3.5</td></tr><tr><td>Presser foot</td><td>Walking foot strongly recommended</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Never use a straight stitch on seams that will stretch. Threads pop the first time the garment is pulled over the head</li><li>Cut edges curl toward the right side; use clips and don&#x27;t fight the curl. It relaxes once the seam is stitched</li><li>A twin-needle hem gives a flat, professional finish that mimics a coverstitch</li><li>Stabilize shoulder seams with clear elastic or stay tape. They bear stress and shouldn&#x27;t stretch</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">Cotton jersey is the foundational t-shirt fabric, a single knit with a smooth face and slightly textured back. Weights run 140 gsm (light drapey summer tees), 180 gsm (standard), 220+ gsm (heavier structured tees). The signature home-sewer challenge is the cut edge, which curls aggressively on lighter weights. Let it curl, work with it; don&#x27;t try to press it flat. The other shift from woven is the stitch. A straight stitch on a stretch seam will break the first time it&#x27;s loaded. Use a narrow zigzag (2.0 mm × 2.5 mm) or a lightning bolt stitch if the 4452 has one. For hems, a twin needle delivers parallel topstitching with a zigzag underneath, mimicking the flatlock or coverstitch on commercial tees.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>

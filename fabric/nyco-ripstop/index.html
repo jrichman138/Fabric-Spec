@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Synthetic</div>
-      <div class="fabric-name">Nyco Ripstop</div>
-      <div class="tags"><span class="tag">workwear</span><span class="tag">shell</span><span class="tag">pocket</span><span class="tag">pack</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Universal 80/12</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Schmetz Microtex Sharp 80/12 for tighter weaves</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 100 for seams</li><li>Gütermann Mara 70 for reinforced seams and topstitching</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>2.5–3.0 mm</td></tr><tr><td>Stitch width</td><td>0 (straight stitch)</td></tr><tr><td>Tension</td><td>4</td></tr><tr><td>Presser foot</td><td>Standard foot; Teflon foot if coated</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Ripstop grid means cuts and tears don&#x27;t propagate. Work with it by cutting on-grid where possible</li><li>Pre-shrink before cutting if using for fitted garments</li><li>Nylon content can fray at cut edges. Heat-seal or serge promptly</li><li>Bar tack at all attachment points. The nylon component is strong but the weave opens under point stress</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">Nyco (nylon-cotton blend) ripstop combines nylon&#x27;s durability with cotton&#x27;s breathability. It&#x27;s the classic military and workwear fabric for BDUs, field shirts, and cargo pants. The grid resists tearing, but the open weave demands well-finished seams. The cotton content takes medium heat with steam, unlike pure nylon. Flat-felled seams add durability and look clean on both sides. The 4452 handles it at standard settings.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>

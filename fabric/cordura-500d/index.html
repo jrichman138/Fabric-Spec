@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Synthetic</div>
-      <div class="fabric-name">Cordura 500D</div>
-      <div class="tags"><span class="tag">pack</span><span class="tag">structure</span><span class="tag">workwear</span><span class="tag">pocket</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Jeans 100/16 or 110/18</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Schmetz Heavy Duty 100/16</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 30 or Mara 50 for seams (high-tenacity polyester)</li><li>Gütermann Mara 30 for topstitching</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>3.0–3.5 mm</td></tr><tr><td>Stitch width</td><td>0 (straight stitch)</td></tr><tr><td>Tension</td><td>5–6 (higher tension for thick thread in dense fabric)</td></tr><tr><td>Presser foot</td><td>Walking foot strongly recommended</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Use a rubber mallet to flatten bulky seam intersections before sewing</li><li>Sew at full speed through thick sections. The motor handles it better than slow crawling</li><li>Use a seam roller or clapper after each seam to reduce bulk</li><li>Topstitching is both decorative and structural. Don&#x27;t skip it on bags and pack panels</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">Cordura 500D is high-tenacity nylon for packs, bags, and heavy-duty workwear. Dense and abrasion-resistant, it demands matching needle and thread strength. Mara 30 holds. Lighter threads break under typical Cordura loads. A walking foot is almost mandatory for multi-layer work, keeping layers feeding evenly. Watch for needle heat on long seams. Pause to let the needle cool if skipped stitches start showing up, or swap in a fresh needle. Bar tack every strap and webbing attachment in pack construction.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>

@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Natural</div>
-      <div class="fabric-name">Cotton Poplin</div>
-      <div class="tags"><span class="tag">shirt</span><span class="tag">lining</span><span class="tag">pocket</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Microtex Sharp 70/10 or 80/12</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Schmetz Universal 80/12</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 120 for fine poplin</li><li>Gütermann Mara 100 for standard weight</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>2.0–2.5 mm</td></tr><tr><td>Stitch width</td><td>0 (straight stitch); 4.0 mm zigzag for edge finishing</td></tr><tr><td>Tension</td><td>3.5–4</td></tr><tr><td>Presser foot</td><td>Standard foot</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Pre-wash. Quality poplin shrinks, and you want the shrinkage to happen before the fabric is cut</li><li>Press seams as you go; cotton poplin holds a crease beautifully and shows unpressed seams clearly</li><li>Use Microtex needles to avoid visible holes in the tight plain weave</li><li>Edge-finish promptly. Poplin frays steadily once cut</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">Cotton poplin is a tight plain-weave cotton with a slight ribbed texture (weft heavier than warp). It&#x27;s the workhorse shirting fabric for button-ups, light pants, and pocket bags. Compared to polyester broadcloth, it presses crisper and frays harder. A Microtex needle pushes through cleanly without leaving visible holes, which matters on shirts. Use 2.0 mm stitches for collar and cuff topstitching, 2.5 mm for side seams. Press seams open on dressier shirts, to one side and topstitch on workshirts.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>

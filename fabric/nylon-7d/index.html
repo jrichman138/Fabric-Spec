@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Synthetic</div>
-      <div class="fabric-name">Nylon 7D</div>
-      <div class="tags"><span class="tag">ultralight</span><span class="tag">lining</span><span class="tag">pack</span><span class="tag">shelter</span><span class="tag">shell</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Microtex Sharp 60/8 or 65/9</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Schmetz Universal 70/10 (if Microtex causes skipped stitches)</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 120 (fine polyester — matches the lightweight fabric)</li><li>Avoid heavy thread; it will pucker the fabric</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>1.5–2.0 mm</td></tr><tr><td>Stitch width</td><td>0 (straight stitch)</td></tr><tr><td>Tension</td><td>3–3.5 (lighter tension to avoid puckering)</td></tr><tr><td>Presser foot</td><td>Teflon foot; standard foot with tissue paper if Teflon unavailable</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Use tissue paper above and below fabric when sewing. It prevents the feed dogs from chewing the fabric</li><li>Sew slowly and steadily; don&#x27;t let the fabric bunch at the start of a seam</li><li>Hold thread tails when starting to prevent jamming</li><li>Test tension on scrap every session. Humidity affects this fabric&#x27;s behavior</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">7D nylon is extremely lightweight and slippery. It pulls into the feed dogs at seam starts, jamming and tearing. Start with the needle down and hold fabric taut, not stretched. Tissue paper under the seam line, torn away after, prevents most of this. Heat-seal or French-seam allowances; the fabric is too light for serging. Best for stuff sacks, ultralight wind layers, and pack linings.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>

@@ -45,7 +45,7 @@
   <!-- Self-hosted display font -->
   <link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/style.css?v=7">
+  <link rel="stylesheet" href="/style.css?v=8">
 </head>
 <body>
   <noscript>
@@ -83,46 +83,11 @@
           </button>
         </header>
         <main id="detail-panel" aria-live="polite" aria-atomic="false">
-          <div id="placeholder" hidden>
+          <div id="placeholder">
             <div id="placeholder-logo">Fabric<br>Spec</div>
+            <p id="placeholder-hint">Select a fabric above.</p>
           </div>
-          <div id="fabric-detail">
-    <div class="fabric-header">
-      <div class="fabric-group">Knits</div>
-      <div class="fabric-name">Cotton Rib Knit</div>
-      <div class="tags"><span class="tag">tshirt</span><span class="tag">midlayer</span><span class="tag">trim</span></div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Needle</h2>
-      <div class="kv-list">
-        <div class="kv-row"><span class="kv-key">Primary</span><span class="kv-val">Schmetz Jersey/Ball Point 80/12</span></div>
-        <div class="kv-row"><span class="kv-key">Alternative</span><span class="kv-val">Schmetz Stretch 75/11</span></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Thread</h2>
-      <ul class="thread-list"><li>Gütermann Mara 100</li></ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title-row">
-        <h2 class="section-title">Machine Settings</h2>
-        <span class="section-machine">Singer Heavy Duty 4452</span>
-      </div>
-      <table class="settings-table"><tbody><tr><td>Stitch length</td><td>2.0–2.5 mm</td></tr><tr><td>Stitch width</td><td>2.5–3.5 mm zigzag</td></tr><tr><td>Tension</td><td>3–3.5</td></tr><tr><td>Presser foot</td><td>Walking foot</td></tr></tbody></table>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Quick Tips</h2>
-      <ul class="tips-list"><li>Cut rib trim shorter than the opening it&#x27;s attaching to, typically 80–90% for necklines and 90% for cuffs. It stretches to fit and pulls in cleanly</li><li>Quarter the opening and the rib (mark four equal points on each) and match the quarters before sewing. This distributes the stretch evenly</li><li>Don&#x27;t pull the rib while attaching it; stretch it to match the quarter marks and let the machine feed</li><li>1×1 rib (alternating single ribs) is softer and more elastic; 2×2 rib (paired ribs) is heavier and used on sweatshirt cuffs</li></ul>
-    </div>
-    <div class="section">
-      <h2 class="section-title">Detail</h2>
-      <p class="detail-text">Cotton rib knit is the companion fabric to every t-shirt and sweatshirt: cuffs, collars, neckbands, hems, and occasionally a ribbed body. The defining property is bidirectional elasticity with strong recovery, exactly what a neckband needs to stretch over a head and snap closed. The core skill is sizing the rib. Too long, the trim flops; too short, it puckers the body. Quartering works: mark four equal points on the rib and the opening, match them, stretch the rib evenly between marks. 1×1 rib is standard for t-shirt necklines. 2×2 rib is heavier, used on sweatshirt cuffs and hems. Buy rib trim that matches the body fabric&#x27;s fiber content so they shrink and age together.</p>
-    </div>
-  </div>
+          <div id="fabric-detail" hidden></div>
           <footer id="detail-footer" hidden>
             <span id="footer-credit"></span>
             <a id="contact-link" href="#">Feedback</a>
